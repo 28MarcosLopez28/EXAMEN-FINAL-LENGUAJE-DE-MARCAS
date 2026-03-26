@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HabitTracker SaaS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <a href="/">Inicio</a>
+    <a href="/habitos">Hábitos</a>
+    <a href="/registros">Progreso</a>
+    <a href="/login">Login</a>
+    <a href="/register">Registro</a>
+</nav>
+
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>
